@@ -1,0 +1,385 @@
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    margin-top: 4%;
+    margin-left: -2.5%;
+  }
+
+  .div1 {
+    margin-left: 25%;
+    background: #9ca4ab;
+    opacity: 0.2;
+    width: 16%;
+    height: 99px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .div2 {
+    margin-right:25%;
+    margin-top: -99px;
+    background: #9ca4ab;
+    float: right;
+    opacity: 0.2;
+    width: 33%;
+    height: 99px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .div3 {
+    margin-left:25%;
+    margin-top: 10%;
+    background: #9ca4ab;
+    opacity: 0.2;
+    width: 50%;
+    height: 99px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .div1:hover, .div2:hover, .div3:hover {
+    background: #6a6e72;
+  }
+
+  .img {
+    max-width: 250px;
+    height: 200px;
+    margin: 3px;
+    border-radius: 5px;
+  }
+
+  .img:hover {
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
+
+/* Info Section */
+  .info-section {
+    margin-top: -7%;
+    float: right;
+    margin-right: 24.5%;
+    position: relative;
+    
+  }
+  .info-section h1 {
+    font-size: 30px;
+    color: #28429b;
+    font-weight: 900;
+  }
+
+  .info-section p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #494a4b;
+    padding-top: 30px;
+    line-height: 25px;
+  }
+
+/* Buttons */
+  .buttons {
+    margin-top: -10%;
+    margin-left: 55.5%;
+    position: relative;
+}
+
+    
+.left-btn {
+    background-image: url(/static/images/arrow-gray-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    display:block;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.left-btn:hover {
+    background-image: url(/static/images/arrow-blue-left.png);
+    border: 1px solid #2e6da4;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.right-btn {
+    background-image: url(/static/images/arrow-gray-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.right-btn:hover {
+    background-image: url(/static/images/arrow-blue-right.png);
+    border: 1px solid #2e6da4;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+/* Circle at right side */
+.circle {
+    background-color: #9ca4ab;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    margin-left: 98%;
+    top: 45%;
+    opacity: 0.6;
+    transition: 0.3s;
+    float: right;
+    position: fixed;
+}
+
+.circle:hover {
+    margin-left: 96%;
+    transition: 0.5;
+    background-color: #7e8183;
+    cursor: pointer;
+}
+
+
+/*Responsivity      */
+/*Mobile Devices     */
+@media only screen and (min-width: 290px) and (max-width: 719px) {
+
+    .container{
+      margin-top: 15%;
+    }
+    .box {
+      margin-left: -3% ;
+      
+    }
+ 
+  
+  .box1, .box2 {
+      display: flex;
+      flex-direction: column;
+      float: right;
+      position: relative;
+      justify-content: space-around;
+    }
+
+    .img {
+      height: 100px;
+      width: auto;
+      margin: 1px;
+      border-radius: 5px;
+    }
+
+    .buttons {
+      margin-top: 45%;
+      margin-left: 12%;
+      position: absolute;
+    }
+
+    
+  .info-section{
+      margin-top: 25%;
+      margin-left: 15%;
+      text-align: center;
+      align-items: center;
+
+}  
+    .div3{
+      margin-top: 450%;
+    }
+    .circle {
+      top: 25%;
+    }
+}
+
+/* Laptops, tablets and smaller desktops */
+ @media only screen and (min-width: 720px) and (max-width: 1024px) {
+
+    .info-section{
+          float: none;
+          margin: auto;
+          margin-top: 5%;
+          clear: both;
+          text-align: center;
+      }  
+      
+      .box {
+        margin-left: -58%;
+      }
+      .buttons {
+        margin-top: -15%;
+        margin-right: 7%;
+        float: right;
+      }
+      
+      .box1, .box2 {
+          display: flex;
+          flex-direction: row;
+        }
+        .div3{
+          width: 50%
+        }
+      
+    }
+  /* Laptops and smaller desktops */
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+
+    .buttons {
+      margin-top: -15%;
+      margin-left: 84%;
+      position: relative;
+    }
+    .info-section {
+      
+      margin-top: 11%;
+      margin-right: 14%;
+
+      
+    }
+    .info-section h1 {
+      font-size: 40px;
+      color: #28429b;
+      font-weight: 900;
+  }
+  
+  .info-section p {
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #494a4b;
+      padding-top: 30px;
+      line-height: 25px;
+  }
+  .div3{
+    margin-top: 12%;
+    margin-left: 24%;
+    height: 35%;
+    width: 29%;
+  }
+
+  }
+
+  /* Laptops and smaller desktops */
+@media screen and (min-width: 1281px) and (max-width: 1599px) {
+  
+  .buttons {
+    margin-top: -12%;
+    margin-left: 70%;
+    position: relative;
+  }
+  
+  .info-section {
+      
+    margin-top: 7%;
+    margin-right: 24.5%;
+    
+  }
+  .info-section h1 {
+    font-size: 30px;
+    color: #28429b;
+    font-weight: 900;
+}
+
+.info-section p {
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #494a4b;
+    padding-top: 30px;
+    line-height: 25px;
+}
+.div3{
+  margin-top: 12%;
+  margin-left: 25%;
+  height: 30%;
+  width: 25%;
+}
+  }
+
+
+  /* Widescreen           */
+  @media screen and (min-width: 1600px) and (max-width: 1699px) {
+
+  .buttons {
+    margin-top: -11%;
+    margin-left: 66%;
+    position: relative;
+  }
+  .info-section {
+    margin-top: 5%;
+    margin-right: 24.3%;
+    
+  }
+  .info-section h1 {
+    font-size: 27px;
+    color: #28429b;
+    font-weight: 900;
+}
+
+.info-section p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #494a4b;
+    padding-top: 30px;
+    line-height: 25px;
+}
+  .div3{
+    width: 30%;
+    height: 20%;
+  }
+  }
+
+  @media screen and (min-width: 1700px) and (max-width: 1919px) {
+
+    .buttons {
+      margin-top: -11%;
+      margin-left: 61%;
+      position: relative;
+    }
+    .info-section {
+      margin-top: 5%;
+      margin-right: 24.3%;
+      
+    }
+    .info-section h1 {
+      font-size: 27px;
+      color: #28429b;
+      font-weight: 900;
+  }
+  
+  .info-section p {
+      font-size: 15px;
+      letter-spacing: 1px;
+      color: #494a4b;
+      padding-top: 30px;
+      line-height: 25px;
+  }
+    .div3{
+      width: 30%;
+      height: 20%;
+    }
+    }
+  
+ /* Widescreen                         */
+  @media screen and (min-width: 1921px) and (max-width: 2250px) {
+
+    .buttons {
+      margin-top: -9%;
+      margin-left: 50%;
+      position: relative;
+    }
+    .info-section {
+      margin-top: -7%;
+      margin-right: 30%;
+      
+    }
+    .div3{
+      width: 50%
+    }
+    
+  }
